@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/the_nail" />
+
+    <include
+        android:id="@+id/descrip_text_view"
+        layout="@layout/companyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view" />
+
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descrip_text_view"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:text="Lily Garden Nails is a popular nail salon in the centre of Stockholm. We have variety of service including eyelash extensions, nail treatments and pedikyr.
+ " android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <include
+        android:id="@+id/adress_text_view"
+        layout="@layout/adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_us"
+        android:adjustViewBounds="true" />
+
+    <include
+        android:id="@+id/phone_view"
+        layout="@layout/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adress_text_view" />
+
+    <include
+        android:id="@+id/opening_hours"
+        layout="@layout/opening"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/phone_view" />
+
+</RelativeLayout>
